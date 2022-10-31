@@ -77,20 +77,14 @@ $(function(){
                                          "</tr>");
             if(cli.Categoria=="Sem categoria")
                 soma+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Transferência")
+            if(cli.Categoria=="Água")
                 soma1+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Alimentação")
+            if(cli.Categoria=="Lixo")
                 soma2+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Casa")
+            if(cli.Categoria=="Papel")
                 soma3+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Receita")
+            if(cli.Categoria=="Plástico")
                 soma4+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Saude")
-                soma5+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Transporte")
-                soma6+= parseFloat(cli.Gasto);
-            if(cli.Categoria=="Vestuário")
-                soma7+= parseFloat(cli.Gasto);
             
             listaData.push(cli.Data);           
             novaArr = listaData.filter((este, i) => listaData.indexOf(este) === i);
